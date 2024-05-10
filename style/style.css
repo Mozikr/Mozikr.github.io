@@ -149,7 +149,7 @@ a:hover{
 
 section {
     padding-top: 4vh;
-    height: 70vh;
+    height: 100%;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
