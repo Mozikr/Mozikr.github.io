@@ -353,6 +353,11 @@ article .icon {
   position: relative;
 }
 
+.tag_under_project{
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
