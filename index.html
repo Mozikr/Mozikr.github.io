@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szymon Mozol (mozikr)</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-links');
+            const icon = document.querySelector('.hamburger-icon');
+            menu.classList.toggle('open');
+            icon.classList.toggle('open');
+        }
+
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Szymon Mozol</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Hello</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Szymon Mozol</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Hello</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Szymon Mozol profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Szymon Mozol</h1>
+            <p class="section__text__p2">C++/C# Programmer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/szymon-mozol-a7693818a/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Mozikr'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic_2.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Unity Engine (3+ years)<br>Unreal Engine 5 (3+ months)</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor's Degree<br>WSB Merito University, Wrocław</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a bachelor's degree holder in Computer Science at WSB Merito University in Wrocław with specialization in cloud application developer.
+                        I spend most of my time creating games in Unity Engine with emphasis on programming them. I am learning to program in C# but I also know Java and C++.
+                        I can write clean, optimal and efficient code. I know the Unity engine very well, I can use event system, animations, UI,
+                        particle system, lighting system, sound system, the new Input system, import assets and configure them, handle 2D/3D graphics and much more.
+                        In my free time I also learn Unreal Engine 5. Ever since my childhood, I have cultivated a deep fascination for video games. Creating, playing,
+                        immersing myself in discussions about them, and avidly watching gaming content are my primary passions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h2 class="title">Experience</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Technology</h3>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Unreal Engine</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Visual Studio</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Languages</h3>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Certificates</h3>
+                    <div class="article-container">
+                        <article class="certificate-item">
+                            <img src="./assets/certificate.png" alt="Certificate icon" class="icon certificate-icon">
+                            <div>
+                                <h3>ISTQB Certified Tester Foundation Level</h3>
+                                <p>Data uzyskania: [Data]</p>
+                            </div>
+                        </article>
+                        <article class="certificate-item">
+                            <img src="./assets/certificate.png" alt="Certificate icon" class="icon certificate-icon">
+                            <div>
+                                <h3>Cisco IT Essentials</h3>
+                                <p>Data uzyskania: [Data]</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h2 class="title">Projects</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Projects/AwakenInfinity.png" alt="Awaken Infinity" class="project-img">
+                    </div>
+                    <h3 class="experience-sub-title project-title">Awaken Infinity</h3>
+                    <p class="tag_under_project">Role: Programmer/Game Developer</p>
+                    <p class="tag_under_project">Unity(C#)</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://store.steampowered.com/app/3168400/Awaken_Infinity/'">
+                            Steam Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Projects/Violin.png" alt="The violinist’s legacy: a tale of echoing tragedy" class="project-img">
+                    </div>
+                    <h3 class="experience-sub-title project-title">The violinist’s legacy: a tale of echoing tragedy</h3>
+                    <p class="tag_under_project">Role: Programmer/Game Developer</p>
+                    <p class="tag_under_project">Unity(C#)</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Mozikr/The_violinist_s_legacy_a_tale_of_echoing_tragedy'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://mozikr.itch.io/the-violonist'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Projects/NinjaFrog.png" alt="Ninja Frog" class="project-img">
+                    </div>
+                    <h3 class="experience-sub-title project-title">Ninja Frog</h3>
+                    <p class="tag_under_project">Role: Programmer/Game Developer</p>
+                    <p class="tag_under_project">Unity(C#)</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Mozikr/Ninja_Frog'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://mozikr.itch.io/ninja-frog'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/contact.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:szymonmozol123@gmail.com">szymonmozol123@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/szymon-mozol-a7693818a/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
